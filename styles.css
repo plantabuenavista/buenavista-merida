@@ -1,0 +1,209 @@
+/* =========================
+   BUENAVISTA - ESTILOS BASE
+   ========================= */
+
+:root {
+  --azul-oscuro: #073b78;
+  --azul: #0867c9;
+  --azul-claro: #eaf6ff;
+  --verde: #079447;
+  --naranja: #f36b16;
+  --texto: #10213d;
+  --blanco: #ffffff;
+  --gris: #f5f8fc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--texto);
+  background: var(--blanco);
+  line-height: 1.6;
+}
+
+/* ENCABEZADO */
+
+header {
+  min-height: 500px;
+  padding: 100px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(234, 246, 255, 0.98) 0%,
+      rgba(234, 246, 255, 0.90) 50%,
+      rgba(255, 255, 255, 0.80) 100%
+    );
+}
+
+header h1 {
+  max-width: 800px;
+  color: var(--azul-oscuro);
+  font-size: clamp(2.7rem, 6vw, 5rem);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  margin-bottom: 25px;
+}
+
+header p {
+  max-width: 650px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--azul);
+}
+
+/* CONTENIDO */
+
+main {
+  width: 100%;
+}
+
+section {
+  padding: 80px 8%;
+}
+
+section:nth-child(odd) {
+  background: var(--blanco);
+}
+
+section:nth-child(even) {
+  background: var(--gris);
+}
+
+section h2 {
+  color: var(--azul-oscuro);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+section h3 {
+  max-width: 900px;
+  margin: 30px auto 10px;
+  color: var(--azul);
+  font-size: 1.5rem;
+}
+
+section p {
+  max-width: 900px;
+  margin: 0 auto 20px;
+  font-size: 1.08rem;
+}
+
+/* SERVICIOS */
+
+section:first-child h3 {
+  background: var(--blanco);
+  padding: 25px 30px 5px;
+  margin-top: 20px;
+
+  border-left: 5px solid var(--azul);
+  border-radius: 12px 12px 0 0;
+
+  box-shadow: 0 8px 30px rgba(7, 59, 120, 0.08);
+}
+
+section:first-child h3 + p {
+  background: var(--blanco);
+  padding: 5px 30px 25px;
+
+  border-left: 5px solid var(--azul);
+  border-radius: 0 0 12px 12px;
+
+  box-shadow: 0 8px 30px rgba(7, 59, 120, 0.08);
+}
+
+/* CONTACTO */
+
+section:last-child {
+  background: var(--azul-oscuro);
+  color: var(--blanco);
+  text-align: center;
+}
+
+section:last-child h2 {
+  color: var(--blanco);
+}
+
+section:last-child p {
+  font-size: 1.15rem;
+}
+
+/* LINKS */
+
+a {
+  color: inherit;
+}
+
+section:last-child a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Botón de WhatsApp */
+
+section:last-child p:nth-of-type(2) a {
+  background: var(--verde);
+  color: var(--blanco);
+
+  padding: 15px 28px;
+  margin: 10px 0;
+
+  border-radius: 50px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+section:last-child p:nth-of-type(2) a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+  header {
+    min-height: 420px;
+    padding: 70px 7%;
+  }
+
+  header h1 {
+    font-size: 2.7rem;
+    letter-spacing: -1px;
+  }
+
+  header p {
+    font-size: 1.25rem;
+  }
+
+  section {
+    padding: 55px 7%;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+
+  section:first-child h3,
+  section:first-child h3 + p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
