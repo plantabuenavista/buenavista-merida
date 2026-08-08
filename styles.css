@@ -1529,3 +1529,15 @@ img {
   }
 
 }
+#agua .service-picture {
+  height: 205px;
+  overflow: hidden;
+}
+
+#agua .service-picture img {
+  display: block;
+  width: 95%;
+  height: 95%;
+  object-fit: contain;
+  object-position: center;
+}
