@@ -117,16 +117,11 @@ img {
 
 
 .header-logo {
-
-  width: 190px;
-
-  height: 95px;
-
+  width: 100%;
+  max-width: 235px;
+  height: 105px;
   object-fit: contain;
-
-  object-position:
-    left center;
-
+  object-position: left center;
 }
 
 
@@ -1042,11 +1037,11 @@ img {
 
 
   .nav-container {
-
-    grid-template-columns:
-      190px
-      1fr
-      205px;
+  grid-template-columns:
+    300px
+    1fr
+    260px;
+}
 
     padding:
       0 28px;
@@ -1057,12 +1052,11 @@ img {
 
 
   .header-logo {
-
-    width: 160px;
-
-    height: 80px;
-
-  }
+  width: 230px;
+  height: 95px;
+  object-fit: contain;
+  object-position: left center;
+}
 
 
   .nav-links {
