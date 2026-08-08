@@ -1541,3 +1541,26 @@ img {
   object-fit: contain;
   object-position: center;
 }
+/* =========================================
+   AJUSTES FINALES DEL HEADER
+   ========================================= */
+
+.header-logo {
+  width: 250px !important;
+  height: 95px !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+
+.brand {
+  width: 270px !important;
+  height: 100px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+.nav-container {
+  grid-template-columns: 280px 1fr 230px !important;
+}
