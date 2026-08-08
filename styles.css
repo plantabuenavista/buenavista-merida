@@ -1564,3 +1564,17 @@ img {
 .nav-container {
   grid-template-columns: 280px 1fr 230px !important;
 }
+.call-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 14px !important;
+  width: auto !important;
+  padding: 0 24px !important;
+}
+
+.call-button .phone-number {
+  margin-left: 0 !important;
+  padding-left: 14px !important;
+  border-left: 1px solid #c7d8ee !important;
+}
