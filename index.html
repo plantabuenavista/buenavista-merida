@@ -2,28 +2,36 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Agua Purificada Buenavista | Mérida, Yucatán</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <meta
     name="description"
-    content="Agua Purificada Buenavista en Mérida, Yucatán. Agua purificada, pipas de agua y recolección privada de basura."
+    content="Agua Purificada Buenavista. Agua purificada, pipas de agua y recolección privada de basura en Mérida, Yucatán."
   >
+
+  <title>Agua Purificada Buenavista | Mérida, Yucatán</title>
 
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <!-- HEADER -->
+  <!-- =========================================
+       HEADER
+  ========================================== -->
+
   <header class="topbar">
+
     <div class="nav-container">
 
-      <a href="#inicio" class="brand">
+      <a class="brand" href="#inicio">
         <img
-          src="logo-buenavista-cropped.png"
-          alt="Agua Buenavista"
+          src="logo-buenavista.png"
+          alt="Agua Purificada Buenavista"
           class="header-logo"
         >
       </a>
@@ -41,251 +49,334 @@
         class="nav-whatsapp"
         href="https://wa.me/529993270653"
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
       >
+        <span class="whatsapp-icon">◯</span>
         PEDIR POR WHATSAPP
       </a>
 
     </div>
+
   </header>
 
 
-  <!-- HERO -->
-  <main id="inicio">
+  <!-- =========================================
+       HERO
+  ========================================== -->
 
-    <section class="hero">
+  <main>
 
-      <div class="hero-copy">
+    <section class="hero" id="inicio">
 
-        <p class="eyebrow">
-          AGUA PURIFICADA BUENAVISTA
-        </p>
+      <div class="hero-container">
 
-        <h1>BUENAVISTA</h1>
+        <!-- ===============================
+             TEXTO IZQUIERDO
+        ================================ -->
 
-        <h2>
-          Agua purificada, pipas de agua y
-          <span>recolección privada de basura</span>
-        </h2>
+        <div class="hero-copy">
 
-        <div class="blue-line"></div>
+          <p class="eyebrow">
+            AGUA PURIFICADA BUENAVISTA
+          </p>
 
-        <p class="hero-description">
-          Servicios confiables para hogares, negocios y empresas
-          en Mérida, Yucatán.
-        </p>
+          <h1>
+            BUENAVISTA
+          </h1>
 
-        <div class="hero-buttons">
+          <h2>
+            Agua purificada, pipas de agua y
+            <span>recolección privada de basura</span>
+          </h2>
 
-          <a
-            class="main-button whatsapp-main"
-            href="https://wa.me/529993270653"
-            target="_blank"
-            rel="noopener"
-          >
-            PEDIR POR WHATSAPP
-          </a>
+          <div class="title-line"></div>
 
-          <a
-            class="main-button call-main"
-            href="tel:+529993270653"
-          >
-            <span class="phone-icon">☎</span>
-            <span class="call-text">LLAMAR AHORA</span>
-            <span class="call-separator"></span>
-            <strong>999 327 0653</strong>
-          </a>
+          <p class="hero-description">
+            Servicios confiables para hogares, negocios y
+            empresas en Mérida, Yucatán.
+          </p>
+
+
+          <!-- BOTONES -->
+
+          <div class="hero-buttons">
+
+            <a
+              class="main-button whatsapp-main"
+              href="https://wa.me/529993270653"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="button-icon">◯</span>
+              <span>PEDIR POR WHATSAPP</span>
+            </a>
+
+
+            <a
+              class="main-button call-main"
+              href="tel:+529993270653"
+            >
+
+              <span class="phone-icon">☎</span>
+
+              <span class="call-text">
+                LLAMAR AHORA
+              </span>
+
+              <span class="call-separator"></span>
+
+              <strong class="phone-number">
+                999 327 0653
+              </strong>
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- ===============================
+             SERVICIOS
+        ================================ -->
+
+        <div class="services-grid">
+
+
+          <!-- AGUA PURIFICADA -->
+
+          <article class="service-card water-card" id="agua">
+
+            <div class="service-icon blue-icon">
+              ♙
+            </div>
+
+            <div class="card-image water-image">
+
+              <img
+                src="agua-productos.png"
+                alt="Garrafón, botella de un litro y botella de 500 ml de Agua Purificada Buenavista"
+              >
+
+            </div>
+
+
+            <div class="card-content">
+
+              <h3>
+                AGUA PURIFICADA
+              </h3>
+
+              <p class="card-description">
+                Agua purificada en garrafones,
+                botellas y más.
+              </p>
+
+              <div class="features">
+                <span>✓ Calidad</span>
+                <span>✓ Agua purificada</span>
+                <span>✓ Servicio local</span>
+              </div>
+
+              <a
+                class="service-button water-button"
+                href="https://wa.me/529993270653"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                PEDIR AGUA
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- PIPAS -->
+
+          <article class="service-card pipe-card" id="pipas">
+
+            <div class="service-icon green-icon">
+              ▣
+            </div>
+
+            <div class="card-image">
+
+              <img
+                src="pipa-buenavista.jpg"
+                alt="Pipa de agua Buenavista"
+              >
+
+            </div>
+
+
+            <div class="card-content">
+
+              <h3>
+                PIPAS DE AGUA
+              </h3>
+
+              <p class="card-description">
+                Suministro y entrega de agua en
+                pipa de 6 toneladas.
+              </p>
+
+              <div class="features">
+                <span>✓ Pipa de 6 toneladas</span>
+                <span>✓ Servicio confiable</span>
+                <span>✓ Mérida y alrededores</span>
+              </div>
+
+              <p class="available">
+                Servicio 24/7, los 7 días de la semana.
+              </p>
+
+              <a
+                class="service-button pipe-button"
+                href="https://wa.me/529993270653"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                SOLICITAR PIPA
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- BASURA -->
+
+          <article class="service-card trash-card" id="basura">
+
+            <div class="service-icon orange-icon">
+              ▥
+            </div>
+
+            <div class="card-image">
+
+              <img
+                src="basura-buenavista.jpg"
+                alt="Camión de recolección privada de basura Buenavista"
+              >
+
+            </div>
+
+
+            <div class="card-content">
+
+              <h3>
+                RECOLECCIÓN PRIVADA
+                <br>
+                DE BASURA
+              </h3>
+
+              <p class="card-description">
+                Servicio privado de recolección de
+                basura en Mérida.
+              </p>
+
+              <div class="features">
+                <span>✓ Servicio confiable</span>
+                <span>✓ Atención programada</span>
+                <span>✓ Servicio local</span>
+              </div>
+
+              <a
+                class="service-button trash-button"
+                href="https://wa.me/529993270653"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                SOLICITAR RECOLECCIÓN
+              </a>
+
+            </div>
+
+          </article>
 
         </div>
 
       </div>
 
-
-      <!-- SERVICES -->
-      <div class="services">
-
-        <article class="service-card" id="agua">
-
-          <div class="service-picture">
-            <div class="circle-icon blue-circle">💧</div>
-
-            <img
-              src="agua-productos.png"
-              alt="Garrafón y botellas de Agua Purificada Buenavista"
-            >
-          </div>
-
-          <div class="card-content">
-
-            <h3 class="water-title">AGUA PURIFICADA</h3>
-
-            <p class="card-description">
-              Agua purificada en garrafones, botellas y más.
-            </p>
-
-            <div class="features">
-              <span>✓ Calidad</span>
-              <span>✓ Agua purificada</span>
-              <span>✓ Servicio local</span>
-            </div>
-
-            <a
-              class="service-button water-button"
-              href="https://wa.me/529993270653?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20agua%20purificada."
-              target="_blank"
-              rel="noopener"
-            >
-              PEDIR AGUA
-            </a>
-
-          </div>
-        </article>
+    </section>
 
 
-        <article class="service-card" id="pipas">
+    <!-- =========================================
+         BENEFICIOS
+    ========================================== -->
 
-          <div class="service-picture">
-            <div class="circle-icon green-circle">🚚</div>
+    <section class="benefits" id="nosotros">
 
-            <img
-              src="pipa-buenavista.jpg"
-              alt="Pipa de agua Buenavista en Mérida"
-            >
-          </div>
+      <div class="benefits-container">
 
-          <div class="card-content">
+        <div class="benefit">
+          <span class="benefit-icon">◇</span>
+          <strong>Calidad garantizada</strong>
+        </div>
 
-            <h3 class="pipa-title">PIPAS DE AGUA</h3>
+        <div class="benefit">
+          <span class="benefit-icon">⌂</span>
+          <strong>Servicio a domicilio</strong>
+        </div>
 
-            <p class="card-description">
-              Suministro y entrega de agua en pipa de 6 toneladas.
-            </p>
+        <div class="benefit">
+          <span class="benefit-icon">◷</span>
+          <strong>Atención rápida</strong>
+        </div>
 
-            <div class="features">
-              <span>✓ Pipa de 6 toneladas</span>
-              <span>✓ Servicio confiable</span>
-              <span>✓ Mérida y alrededores</span>
-            </div>
-
-            <div class="available">
-              Servicio 24/7, los 7 días de la semana.
-            </div>
-
-            <a
-              class="service-button pipa-button"
-              href="https://wa.me/529993270653?text=Hola%2C%20quiero%20solicitar%20una%20pipa%20de%20agua."
-              target="_blank"
-              rel="noopener"
-            >
-              SOLICITAR PIPA
-            </a>
-
-          </div>
-        </article>
-
-
-        <article class="service-card" id="basura">
-
-          <div class="service-picture">
-            <div class="circle-icon orange-circle">🗑</div>
-
-            <img
-              src="basura-buenavista.jpg"
-              alt="Servicio privado de recolección de basura Buenavista"
-            >
-          </div>
-
-          <div class="card-content">
-
-            <h3 class="trash-title">
-              RECOLECCIÓN PRIVADA<br>
-              DE BASURA
-            </h3>
-
-            <p class="card-description">
-              Servicio privado de recolección de basura en Mérida.
-            </p>
-
-            <div class="features">
-              <span>✓ Servicio confiable</span>
-              <span>✓ Atención programada</span>
-              <span>✓ Servicio local</span>
-            </div>
-
-            <a
-              class="service-button trash-button"
-              href="https://wa.me/529993270653?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20recolecci%C3%B3n%20privada%20de%20basura."
-              target="_blank"
-              rel="noopener"
-            >
-              SOLICITAR RECOLECCIÓN
-            </a>
-
-          </div>
-        </article>
+        <div class="benefit last-benefit">
+          <span class="benefit-icon">⌾</span>
+          <strong>Desde Mérida, Yucatán</strong>
+        </div>
 
       </div>
 
     </section>
 
 
-    <!-- BENEFITS -->
-    <section class="benefits">
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
 
-      <div class="benefit">
-        <span class="benefit-symbol">◇</span>
-        <strong>Calidad garantizada</strong>
+    <footer class="bottom-bar" id="contacto">
+
+      <div class="bottom-info">
+
+        <div>
+          <span>⌾</span>
+          <strong>Mérida, Yucatán</strong>
+        </div>
+
+        <div>
+          <span>◷</span>
+          <strong>Servicio 24/7</strong>
+        </div>
+
+        <a href="tel:+529993270653">
+          <span>☎</span>
+          <strong>999 327 0653</strong>
+        </a>
+
       </div>
 
-      <div class="benefit">
-        <span class="benefit-symbol">⌂</span>
-        <strong>Servicio a domicilio</strong>
-      </div>
-
-      <div class="benefit">
-        <span class="benefit-symbol">◷</span>
-        <strong>Atención rápida</strong>
-      </div>
-
-      <div class="benefit">
-        <span class="benefit-symbol">⌖</span>
-        <strong>Desde Mérida, Yucatán</strong>
-      </div>
-
-    </section>
-
-
-    <!-- BOTTOM BAR -->
-    <section class="bottom-info" id="contacto">
-
-      <div>
-        <span>⌖</span>
-        <strong>Mérida, Yucatán</strong>
-      </div>
-
-      <div>
-        <span>◷</span>
-        <strong>Servicio 24/7</strong>
-      </div>
-
-      <a href="tel:+529993270653">
-        <span>☎</span>
-        <strong>999 327 0653</strong>
-      </a>
-
-    </section>
+    </footer>
 
   </main>
 
+
+  <!-- =========================================
+       BOTÓN WHATSAPP FLOTANTE
+  ========================================== -->
 
   <a
     class="floating-whatsapp"
     href="https://wa.me/529993270653"
     target="_blank"
-    rel="noopener"
+    rel="noopener noreferrer"
     aria-label="Contactar por WhatsApp"
   >
-    ◉
+    ◯
   </a>
 
 </body>
