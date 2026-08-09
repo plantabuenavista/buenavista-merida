@@ -1,383 +1,1147 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
+/* =========================================
+   VARIABLES
+========================================= */
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+:root {
+  --blue: #0874d8;
+  --dark-blue: #073e7d;
+  --green: #07963c;
+  --orange: #f45100;
+  --text: #071c3b;
+  --light-blue: #eefaff;
+}
 
-  <meta
-    name="description"
-    content="Agua Purificada Buenavista. Agua purificada, pipas de agua y recolección privada de basura en Mérida, Yucatán."
-  >
 
-  <title>Agua Purificada Buenavista | Mérida, Yucatán</title>
+/* =========================================
+   RESET
+========================================= */
 
-  <link rel="stylesheet" href="styles.css">
-</head>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-<body>
 
-  <!-- =========================================
-       HEADER
-  ========================================== -->
+html {
+  scroll-behavior: smooth;
+}
 
-  <header class="topbar">
 
-    <div class="nav-container">
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: white;
+}
 
-      <a class="brand" href="#inicio">
-        <img
-          src="logo-buenavista.png"
-          alt="Agua Purificada Buenavista"
-          class="header-logo"
-        >
-      </a>
 
-      <nav class="nav-links">
-        <a href="#inicio">INICIO</a>
-        <a href="#nosotros">NOSOTROS</a>
-        <a href="#agua">AGUA PURIFICADA</a>
-        <a href="#pipas">PIPAS DE AGUA</a>
-        <a href="#basura">RECOLECCIÓN DE BASURA</a>
-        <a href="#contacto">CONTACTO</a>
-      </nav>
+a {
+  text-decoration: none;
+}
 
-      <a
-        class="nav-whatsapp"
-        href="https://wa.me/529993270653"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span class="whatsapp-icon">◯</span>
-        PEDIR POR WHATSAPP
-      </a>
 
-    </div>
+img {
+  display: block;
+  max-width: 100%;
+}
 
-  </header>
 
 
-  <!-- =========================================
-       HERO
-  ========================================== -->
+/* =========================================
+   HEADER
+========================================= */
 
-  <main>
+.topbar {
+  width: 100%;
+  height: 118px;
+  background: white;
+}
 
-    <section class="hero" id="inicio">
 
-      <div class="hero-container">
+.nav-container {
+  width: min(1500px, 94%);
+  height: 118px;
 
-        <!-- ===============================
-             TEXTO IZQUIERDO
-        ================================ -->
+  margin: 0 auto;
 
-        <div class="hero-copy">
+  display: grid;
 
-          <p class="eyebrow">
-            AGUA PURIFICADA BUENAVISTA
-          </p>
+  grid-template-columns:
+    320px
+    minmax(650px, 1fr)
+    250px;
 
-          <h1>
-            BUENAVISTA
-          </h1>
+  align-items: center;
 
-          <h2>
-            Agua purificada, pipas de agua y
-            <span>recolección privada de basura</span>
-          </h2>
+  column-gap: 22px;
+}
 
-          <div class="title-line"></div>
 
-          <p class="hero-description">
-            Servicios confiables para hogares, negocios y
-            empresas en Mérida, Yucatán.
-          </p>
+/* LOGO */
 
+.brand {
+  width: 310px;
+  height: 112px;
 
-          <!-- BOTONES -->
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
-          <div class="hero-buttons">
 
-            <a
-              class="main-button whatsapp-main"
-              href="https://wa.me/529993270653"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="button-icon">◯</span>
-              <span>PEDIR POR WHATSAPP</span>
-            </a>
+.header-logo {
+  width: 300px;
+  height: 110px;
 
+  object-fit: contain;
+  object-position: left center;
+}
 
-            <a
-              class="main-button call-main"
-              href="tel:+529993270653"
-            >
 
-              <span class="phone-icon">☎</span>
+/* NAV */
 
-              <span class="call-text">
-                LLAMAR AHORA
-              </span>
+.nav-links {
+  display: flex;
 
-              <span class="call-separator"></span>
+  align-items: center;
+  justify-content: center;
 
-              <strong class="phone-number">
-                999 327 0653
-              </strong>
+  gap: 28px;
 
-            </a>
+  white-space: nowrap;
+}
 
-          </div>
 
-        </div>
+.nav-links a {
+  color: var(--dark-blue);
 
+  font-size: 17px;
 
-        <!-- ===============================
-             SERVICIOS
-        ================================ -->
+  font-weight: 900;
+}
 
-        <div class="services-grid">
 
+.nav-links a:hover {
+  color: var(--blue);
+}
 
-          <!-- AGUA PURIFICADA -->
 
-          <article class="service-card water-card" id="agua">
+/* WHATSAPP HEADER */
 
-            <div class="service-icon blue-icon">
-              ♙
-            </div>
+.nav-whatsapp {
+  justify-self: end;
 
-            <div class="card-image water-image">
+  min-height: 58px;
 
-              <img
-                src="agua-productos.png"
-                alt="Garrafón, botella de un litro y botella de 500 ml de Agua Purificada Buenavista"
-              >
+  padding: 0 25px;
 
-            </div>
+  border-radius: 32px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-            <div class="card-content">
+  gap: 11px;
 
-              <h3>
-                AGUA PURIFICADA
-              </h3>
+  background: var(--blue);
 
-              <p class="card-description">
-                Agua purificada en garrafones,
-                botellas y más.
-              </p>
+  color: white;
 
-              <div class="features">
-                <span>✓ Calidad</span>
-                <span>✓ Agua purificada</span>
-                <span>✓ Servicio local</span>
-              </div>
+  font-size: 16px;
 
-              <a
-                class="service-button water-button"
-                href="https://wa.me/529993270653"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                PEDIR AGUA
-              </a>
+  font-weight: 900;
 
-            </div>
+  white-space: nowrap;
+}
 
-          </article>
 
+.whatsapp-icon {
+  font-size: 22px;
+}
 
-          <!-- PIPAS -->
 
-          <article class="service-card pipe-card" id="pipas">
 
-            <div class="service-icon green-icon">
-              ▣
-            </div>
+/* =========================================
+   HERO
+========================================= */
 
-            <div class="card-image">
+.hero {
+  min-height: 680px;
 
-              <img
-                src="pipa-buenavista.jpg"
-                alt="Pipa de agua Buenavista"
-              >
+  background:
+    radial-gradient(
+      circle at 85% 45%,
+      rgba(52, 181, 255, .24),
+      transparent 38%
+    ),
+    linear-gradient(
+      105deg,
+      #ffffff 0%,
+      #effaff 48%,
+      #d9f4ff 100%
+    );
 
-            </div>
+  display: flex;
+  align-items: center;
+}
 
 
-            <div class="card-content">
+.hero-container {
+  width: min(1580px, 97%);
 
-              <h3>
-                PIPAS DE AGUA
-              </h3>
+  margin: 0 auto;
 
-              <p class="card-description">
-                Suministro y entrega de agua en
-                pipa de 6 toneladas.
-              </p>
+  display: grid;
 
-              <div class="features">
-                <span>✓ Pipa de 6 toneladas</span>
-                <span>✓ Servicio confiable</span>
-                <span>✓ Mérida y alrededores</span>
-              </div>
+  grid-template-columns:
+    minmax(520px, .95fr)
+    minmax(850px, 1.45fr);
 
-              <p class="available">
-                Servicio 24/7, los 7 días de la semana.
-              </p>
+  gap: 38px;
 
-              <a
-                class="service-button pipe-button"
-                href="https://wa.me/529993270653"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                SOLICITAR PIPA
-              </a>
+  align-items: center;
+}
 
-            </div>
 
-          </article>
 
+/* =========================================
+   LEFT TEXT
+========================================= */
 
-          <!-- BASURA -->
+.hero-copy {
+  padding: 30px 0 30px 6px;
+}
 
-          <article class="service-card trash-card" id="basura">
 
-            <div class="service-icon orange-icon">
-              ▥
-            </div>
+.eyebrow {
+  color: var(--blue);
 
-            <div class="card-image">
+  font-size: 23px;
 
-              <img
-                src="basura-buenavista.jpg"
-                alt="Camión de recolección privada de basura Buenavista"
-              >
+  font-weight: 900;
 
-            </div>
+  margin-bottom: 16px;
+}
 
 
-            <div class="card-content">
+.hero-copy h1 {
+  color: var(--dark-blue);
 
-              <h3>
-                RECOLECCIÓN PRIVADA
-                <br>
-                DE BASURA
-              </h3>
+  font-size: 92px;
 
-              <p class="card-description">
-                Servicio privado de recolección de
-                basura en Mérida.
-              </p>
+  line-height: .93;
 
-              <div class="features">
-                <span>✓ Servicio confiable</span>
-                <span>✓ Atención programada</span>
-                <span>✓ Servicio local</span>
-              </div>
+  letter-spacing: -3px;
 
-              <a
-                class="service-button trash-button"
-                href="https://wa.me/529993270653"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                SOLICITAR RECOLECCIÓN
-              </a>
+  margin-bottom: 24px;
+}
 
-            </div>
 
-          </article>
+.hero-copy h2 {
+  max-width: 650px;
 
-        </div>
+  color: var(--dark-blue);
 
-      </div>
+  font-size: 39px;
 
-    </section>
+  line-height: 1.12;
 
+  font-weight: 800;
+}
 
-    <!-- =========================================
-         BENEFICIOS
-    ========================================== -->
 
-    <section class="benefits" id="nosotros">
+.hero-copy h2 span {
+  display: block;
 
-      <div class="benefits-container">
+  color: var(--green);
+}
 
-        <div class="benefit">
-          <span class="benefit-icon">◇</span>
-          <strong>Calidad garantizada</strong>
-        </div>
 
-        <div class="benefit">
-          <span class="benefit-icon">⌂</span>
-          <strong>Servicio a domicilio</strong>
-        </div>
+.title-line {
+  width: 95px;
+  height: 5px;
 
-        <div class="benefit">
-          <span class="benefit-icon">◷</span>
-          <strong>Atención rápida</strong>
-        </div>
+  margin: 30px 0 31px;
 
-        <div class="benefit last-benefit">
-          <span class="benefit-icon">⌾</span>
-          <strong>Desde Mérida, Yucatán</strong>
-        </div>
+  border-radius: 10px;
 
-      </div>
+  background: var(--blue);
+}
 
-    </section>
 
+.hero-description {
+  max-width: 610px;
 
-    <!-- =========================================
-         FOOTER
-    ========================================== -->
+  margin-bottom: 34px;
 
-    <footer class="bottom-bar" id="contacto">
+  font-size: 25px;
 
-      <div class="bottom-info">
+  line-height: 1.45;
+}
 
-        <div>
-          <span>⌾</span>
-          <strong>Mérida, Yucatán</strong>
-        </div>
 
-        <div>
-          <span>◷</span>
-          <strong>Servicio 24/7</strong>
-        </div>
 
-        <a href="tel:+529993270653">
-          <span>☎</span>
-          <strong>999 327 0653</strong>
-        </a>
+/* =========================================
+   HERO BUTTONS
+========================================= */
 
-      </div>
+.hero-buttons {
+  display: flex;
 
-    </footer>
+  align-items: center;
 
-  </main>
+  gap: 16px;
 
+  flex-wrap: nowrap;
+}
 
-  <!-- =========================================
-       BOTÓN WHATSAPP FLOTANTE
-  ========================================== -->
 
-  <a
-    class="floating-whatsapp"
-    href="https://wa.me/529993270653"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Contactar por WhatsApp"
-  >
-    ◯
-  </a>
+.main-button {
+  min-height: 60px;
 
-</body>
-</html>
+  border-radius: 32px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+
+  font-weight: 900;
+
+  white-space: nowrap;
+}
+
+
+.whatsapp-main {
+  min-width: 250px;
+
+  gap: 12px;
+
+  padding: 0 25px;
+
+  color: white;
+
+  background: var(--blue);
+}
+
+
+.button-icon {
+  font-size: 22px;
+}
+
+
+.call-main {
+  min-width: 310px;
+
+  padding: 0 20px;
+
+  color: var(--dark-blue);
+
+  background: white;
+
+  border: 2px solid var(--blue);
+
+  gap: 12px;
+}
+
+
+.phone-icon {
+  font-size: 21px;
+}
+
+
+.call-text {
+  font-size: 16px;
+
+  font-weight: 900;
+}
+
+
+.call-separator {
+  display: block;
+
+  width: 1px;
+  height: 26px;
+
+  margin: 0 3px;
+
+  background: #cbddea;
+}
+
+
+.phone-number {
+  font-size: 18px;
+
+  font-weight: 900;
+}
+
+
+
+/* =========================================
+   SERVICES GRID
+========================================= */
+
+.services-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 15px;
+}
+
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.service-card {
+  position: relative;
+
+  min-width: 0;
+
+  height: 500px;
+
+  overflow: hidden;
+
+  background: white;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 10px 28px
+    rgba(0, 63, 120, .07);
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+
+/* =========================================
+   CARD ICONS
+========================================= */
+
+.service-icon {
+  position: absolute;
+
+  top: 17px;
+  left: 17px;
+
+  z-index: 5;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  font-size: 22px;
+
+  font-weight: 900;
+
+  border: 4px solid white;
+}
+
+
+.blue-icon {
+  background: var(--blue);
+}
+
+
+.green-icon {
+  background: var(--green);
+}
+
+
+.orange-icon {
+  background: var(--orange);
+}
+
+
+
+/* =========================================
+   CARD IMAGES
+========================================= */
+
+.card-image {
+  height: 190px;
+
+  padding: 15px 15px 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+.water-image {
+  height: 200px;
+
+  padding: 10px 15px 0;
+}
+
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.card-content {
+  flex: 1;
+
+  padding: 5px 16px 15px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+
+.card-content h3 {
+  width: 100%;
+
+  margin-bottom: 13px;
+
+  font-size: 25px;
+
+  line-height: 1.08;
+
+  font-weight: 900;
+}
+
+
+.water-card h3 {
+  color: var(--blue);
+}
+
+
+.pipe-card h3 {
+  color: var(--green);
+}
+
+
+.trash-card h3 {
+  color: var(--orange);
+}
+
+
+
+/* =========================================
+   CARD DESCRIPTION
+========================================= */
+
+.card-description {
+  width: 100%;
+
+  min-height: 58px;
+
+  margin-bottom: 9px;
+
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  font-size: 17px;
+
+  line-height: 1.32;
+
+  font-weight: 700;
+}
+
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.features {
+  width: 100%;
+
+  min-height: 65px;
+
+  margin-bottom: 7px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px 12px;
+
+  font-size: 13px;
+
+  line-height: 1.3;
+
+  font-weight: 800;
+}
+
+
+.features span {
+  white-space: nowrap;
+}
+
+
+
+/* =========================================
+   24/7
+========================================= */
+
+.available {
+  width: 100%;
+
+  margin-bottom: 9px;
+
+  padding: 8px 5px;
+
+  border-radius: 8px;
+
+  background: #e1faea;
+
+  color: #087a36;
+
+  font-size: 13px;
+
+  line-height: 1.2;
+
+  font-weight: 900;
+}
+
+
+
+/* =========================================
+   CARD BUTTONS
+========================================= */
+
+.service-button {
+  width: 100%;
+
+  min-height: 46px;
+
+  margin-top: auto;
+
+  border-radius: 26px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 900;
+}
+
+
+.water-button {
+  background: var(--blue);
+}
+
+
+.pipe-button {
+  background: var(--green);
+}
+
+
+.trash-button {
+  background: var(--orange);
+}
+
+
+
+/* =========================================
+   BENEFITS
+========================================= */
+
+.benefits {
+  background: white;
+
+  padding: 20px 0;
+}
+
+
+.benefits-container {
+  width: min(1450px, 92%);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  align-items: center;
+}
+
+
+.benefit {
+  min-height: 45px;
+
+  padding: 0 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 17px;
+
+  color: var(--dark-blue);
+
+  font-size: 17px;
+
+  border-right:
+    1px solid #cfdeea;
+
+  white-space: nowrap;
+}
+
+
+.last-benefit {
+  border-right: none;
+}
+
+
+.benefit-icon {
+  font-size: 31px;
+}
+
+
+
+/* =========================================
+   BOTTOM BAR
+========================================= */
+
+.bottom-bar {
+  min-height: 70px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #0876da,
+      #0064c7
+    );
+
+  display: flex;
+
+  align-items: center;
+}
+
+
+.bottom-info {
+  width: min(1050px, 90%);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+}
+
+
+.bottom-info div,
+.bottom-info a {
+  min-height: 40px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  color: white;
+
+  font-size: 17px;
+
+  border-right:
+    1px solid
+    rgba(255,255,255,.25);
+}
+
+
+.bottom-info a:last-child {
+  border-right: none;
+}
+
+
+
+/* =========================================
+   FLOATING WHATSAPP
+========================================= */
+
+.floating-whatsapp {
+  position: fixed;
+
+  right: 20px;
+  bottom: 18px;
+
+  z-index: 100;
+
+  width: 68px;
+  height: 68px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #00a94f;
+
+  color: white;
+
+  border: 4px solid white;
+
+  box-shadow:
+    0 5px 18px
+    rgba(0,0,0,.18);
+
+  font-size: 34px;
+}
+
+
+
+/* =========================================
+   RESPONSIVE 1400
+========================================= */
+
+@media (max-width: 1400px) {
+
+  .nav-container {
+    grid-template-columns:
+      250px
+      minmax(580px, 1fr)
+      220px;
+  }
+
+
+  .brand {
+    width: 245px;
+  }
+
+
+  .header-logo {
+    width: 240px;
+  }
+
+
+  .nav-links {
+    gap: 18px;
+  }
+
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+
+  .hero-container {
+    grid-template-columns:
+      minmax(450px, .9fr)
+      minmax(760px, 1.4fr);
+
+    gap: 25px;
+  }
+
+
+  .hero-copy h1 {
+    font-size: 76px;
+  }
+
+
+  .hero-copy h2 {
+    font-size: 32px;
+  }
+
+
+  .hero-description {
+    font-size: 21px;
+  }
+
+
+  .card-content h3 {
+    font-size: 22px;
+  }
+
+
+  .card-description {
+    font-size: 15px;
+  }
+
+
+  .features {
+    font-size: 11px;
+  }
+
+}
+
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1150px) {
+
+  .topbar {
+    height: auto;
+  }
+
+
+  .nav-container {
+    height: auto;
+
+    padding: 12px 0;
+
+    grid-template-columns:
+      220px
+      1fr;
+  }
+
+
+  .brand {
+    width: 215px;
+    height: 90px;
+  }
+
+
+  .header-logo {
+    width: 210px;
+    height: 88px;
+  }
+
+
+  .nav-links {
+    display: none;
+  }
+
+
+  .nav-whatsapp {
+    justify-self: end;
+  }
+
+
+  .hero {
+    padding: 45px 0;
+  }
+
+
+  .hero-container {
+    width: 92%;
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+
+  .hero-copy {
+    text-align: center;
+  }
+
+
+  .hero-copy h2,
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .title-line {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+
+  .services-grid {
+    max-width: 900px;
+
+    margin: 0 auto;
+  }
+
+}
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  .nav-container {
+    width: 94%;
+
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+
+    gap: 10px;
+  }
+
+
+  .brand {
+    width: 260px;
+    height: 105px;
+
+    justify-content: center;
+  }
+
+
+  .header-logo {
+    width: 255px;
+    height: 100px;
+
+    object-position: center;
+  }
+
+
+  .nav-whatsapp {
+    justify-self: center;
+
+    min-height: 50px;
+
+    font-size: 13px;
+  }
+
+
+  .hero {
+    padding: 35px 0;
+  }
+
+
+  .hero-container {
+    width: 92%;
+  }
+
+
+  .eyebrow {
+    font-size: 18px;
+  }
+
+
+  .hero-copy h1 {
+    font-size:
+      clamp(47px, 15vw, 68px);
+
+    letter-spacing: -2px;
+  }
+
+
+  .hero-copy h2 {
+    font-size: 27px;
+  }
+
+
+  .hero-description {
+    font-size: 19px;
+  }
+
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+
+  .whatsapp-main,
+  .call-main {
+    width: 100%;
+
+    max-width: 380px;
+  }
+
+
+  .services-grid {
+    grid-template-columns: 1fr;
+
+    max-width: 420px;
+  }
+
+
+  .service-card {
+    height: 510px;
+  }
+
+
+  .benefits-container {
+    grid-template-columns:
+      1fr
+      1fr;
+
+    gap: 15px 0;
+  }
+
+
+  .benefit {
+    font-size: 14px;
+  }
+
+
+  .benefit:nth-child(2) {
+    border-right: none;
+  }
+
+
+  .bottom-info {
+    width: 94%;
+
+    grid-template-columns: 1fr;
+
+    padding: 12px 0;
+  }
+
+
+  .bottom-info div,
+  .bottom-info a {
+    border-right: none;
+
+    border-bottom:
+      1px solid
+      rgba(255,255,255,.18);
+  }
+
+
+  .bottom-info a:last-child {
+    border-bottom: none;
+  }
+
+}
