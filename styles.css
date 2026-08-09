@@ -117,11 +117,10 @@ img {
 
 
 .header-logo {
-  width: 100%;
-  max-width: 235px;
-  height: 105px;
-  object-fit: contain;
-  object-position: left center;
+  width: 230px !important;
+  height: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
 }
 
 
