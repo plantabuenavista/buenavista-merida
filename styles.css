@@ -1713,3 +1713,18 @@ img {
   }
 
 }
+/* LOGO FINAL */
+
+.brand {
+  width: 320px !important;
+  height: 110px !important;
+  overflow: visible !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+.nav-container {
+  grid-template-columns: 330px 1fr 230px !important;
+}
