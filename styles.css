@@ -59,15 +59,16 @@ img {
 
 
 .nav-container {
-  width: min(1500px, 96%);
+  width: 96%;
+  max-width: 1500px;
   height: 118px;
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: 290px 1fr 235px;
-  align-items: center;
+  grid-template-columns: 280px 1fr;
 
-  column-gap: 18px;
+  align-items: center;
+  column-gap: 35px;
 }
 
 .nav-links {
