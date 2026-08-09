@@ -59,21 +59,37 @@ img {
 
 
 .nav-container {
-  width: min(1500px, 94%);
+  width: min(1500px, 96%);
   height: 118px;
-
   margin: 0 auto;
 
   display: grid;
-
-  grid-template-columns:
-    320px
-    minmax(650px, 1fr)
-    250px;
-
+  grid-template-columns: 290px 1fr 235px;
   align-items: center;
 
-  column-gap: 22px;
+  column-gap: 18px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+  white-space: nowrap;
+}
+
+.nav-links a {
+  color: var(--dark-blue);
+  font-size: 16px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.nav-whatsapp {
+  justify-self: end;
+  min-height: 58px;
+  padding: 0 22px;
+  white-space: nowrap;
 }
 
 
