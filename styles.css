@@ -1,29 +1,13 @@
-/* =========================================
-   AGUA PURIFICADA BUENAVISTA
-========================================= */
-
 :root {
-
   --blue: #0868cf;
   --dark-blue: #063b7d;
-
   --green: #07933e;
   --orange: #f25700;
-
   --text: #102542;
-
   --white: #ffffff;
-
   --border: #dce8f2;
-
-  --shadow:
-    0 10px 30px rgba(4, 60, 120, 0.10);
+  --shadow: 0 10px 30px rgba(4, 60, 120, 0.10);
 }
-
-
-/* =========================================
-   RESET
-========================================= */
 
 * {
   box-sizing: border-box;
@@ -31,29 +15,19 @@
   padding: 0;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
 
-
 body {
-
-  font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
-
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--text);
-
   background: white;
 }
-
 
 a {
   text-decoration: none;
 }
-
 
 img {
   display: block;
@@ -61,1670 +35,615 @@ img {
 }
 
 
-
-/* =========================================
-   HEADER
-========================================= */
+/* HEADER */
 
 .topbar {
-
-  height: 128px;
-
+  height: 118px;
   background: white;
-
-  display: flex;
-  align-items: center;
-
-  position: relative;
-  z-index: 100;
-
 }
-
 
 .nav-container {
-
-  width: 100%;
   max-width: 1640px;
-
+  height: 100%;
   margin: auto;
-
-  padding:
-    0 48px;
+  padding: 0 45px;
 
   display: grid;
-
-  grid-template-columns:
-    250px
-    1fr
-    260px;
-
+  grid-template-columns: 290px 1fr 250px;
   align-items: center;
-
   gap: 30px;
-
 }
-
-
-/* LOGO */
 
 .brand {
+  width: 290px;
+  height: 105px;
 
   display: flex;
-
   align-items: center;
-
+  overflow: visible;
 }
-
 
 .header-logo {
-  width: 230px !important;
-  height: auto !important;
-  max-width: 100% !important;
-  object-fit: contain !important;
+  width: 260px;
+  height: 100px;
+  object-fit: contain;
+  object-position: left center;
 }
-
-
-
-/* MENU */
 
 .nav-links {
-
   display: flex;
-
-  justify-content: center;
-
   align-items: center;
-
-  gap: 42px;
-
+  justify-content: center;
+  gap: 38px;
 }
-
 
 .nav-links a {
-
   color: var(--dark-blue);
-
   font-size: 14px;
-
   font-weight: 900;
-
   white-space: nowrap;
-
 }
-
-
-.nav-links a:hover {
-  color: var(--blue);
-}
-
-
-
-/* HEADER WHATSAPP */
 
 .nav-whatsapp {
-
   justify-self: end;
 
-  min-height: 58px;
-
-  padding:
-    0 24px;
+  min-height: 56px;
+  padding: 0 24px;
 
   border-radius: 32px;
 
-  background:
-    linear-gradient(
-      90deg,
-      #0863c7,
-      #0872dc
-    );
-
-  color: white;
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
-  gap: 12px;
+  color: white;
+  background: var(--blue);
 
-  font-size: 14px;
-
+  font-size: 13px;
   font-weight: 900;
-
-  white-space: nowrap;
-
 }
 
 
-.wa-icon {
-
-  font-size: 22px;
-
-}
-
-
-
-/* =========================================
-   HERO
-========================================= */
+/* HERO */
 
 .hero {
-
-  width: 100%;
-
-  min-height:
-    calc(100vh - 268px);
-
-  padding:
-    62px
-    60px
-    56px;
+  min-height: 675px;
+  padding: 58px 42px;
 
   background:
-
     radial-gradient(
       circle at 85% 40%,
       rgba(66, 184, 255, .22),
       transparent 35%
     ),
-
     linear-gradient(
       105deg,
       #ffffff 0%,
-      #f0faff 45%,
+      #f1faff 46%,
       #d9f2ff 100%
     );
 
-
   display: grid;
-
-  grid-template-columns:
-    minmax(500px, 39%)
-    minmax(0, 61%);
-
-  gap: 42px;
-
+  grid-template-columns: 39% 61%;
+  gap: 38px;
   align-items: center;
-
 }
 
 
-
-/* =========================================
-   HERO LEFT
-========================================= */
+/* HERO LEFT */
 
 .hero-copy {
-
-  width: 100%;
-
-  max-width: 650px;
-
+  max-width: 620px;
 }
-
 
 .eyebrow {
-
   color: var(--blue);
-
   font-size: 18px;
-
   font-weight: 900;
-
-  letter-spacing: .3px;
-
   margin-bottom: 12px;
-
 }
-
 
 .hero-copy h1 {
-
   color: var(--dark-blue);
-
-  font-size:
-    clamp(68px, 5.6vw, 102px);
-
+  font-size: 82px;
   line-height: .95;
-
   letter-spacing: -3px;
-
-  font-weight: 900;
-
-  margin-bottom: 18px;
-
+  margin-bottom: 20px;
 }
-
 
 .hero-copy h2 {
-
   color: var(--dark-blue);
-
-  max-width: 650px;
-
-  font-size:
-    clamp(29px, 2.3vw, 41px);
-
-  line-height: 1.12;
-
-  font-weight: 900;
-
+  font-size: 31px;
+  line-height: 1.15;
+  max-width: 610px;
 }
-
 
 .hero-copy h2 span {
-
   display: block;
-
   color: var(--green);
-
 }
-
 
 .blue-line {
-
-  width: 100px;
-
+  width: 95px;
   height: 5px;
-
-  margin:
-    28px
-    0
-    32px;
-
-  border-radius: 5px;
-
+  margin: 28px 0 30px;
+  border-radius: 6px;
   background: var(--blue);
-
 }
-
 
 .hero-description {
-
   max-width: 560px;
-
-  font-size: 24px;
-
-  line-height: 1.55;
-
-  margin-bottom: 42px;
-
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 36px;
 }
 
 
-
-/* =========================================
-   HERO BUTTONS
-========================================= */
+/* HERO BUTTONS */
 
 .hero-buttons {
-
   display: flex;
-
   align-items: center;
-
   gap: 14px;
-
 }
 
-
 .main-button {
-
-  height: 78px;
-
-  border-radius: 45px;
+  height: 62px;
+  border-radius: 34px;
 
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
   font-weight: 900;
-
 }
-
 
 .whatsapp-main {
-
-  width: 285px;
-
+  width: 250px;
   color: white;
-
-  background:
-    linear-gradient(
-      90deg,
-      #0862c7,
-      #0871dc
-    );
-
-  gap: 12px;
-
-  font-size: 15px;
-
+  background: var(--blue);
+  font-size: 13px;
 }
-
-
-.button-icon {
-
-  font-size: 24px;
-
-}
-
 
 .call-main {
-
-  min-width: 360px;
-
-  padding:
-    0 22px;
+  width: auto;
+  padding: 0 20px;
 
   color: var(--dark-blue);
+  background: rgba(255,255,255,.8);
 
-  background:
-    rgba(255,255,255,.70);
+  border: 2px solid var(--blue);
 
-  border:
-    2px solid
-    var(--blue);
-
-  gap: 16px;
-
-}
-
-
-.phone-icon {
-
-  color: var(--blue);
-
-  font-size: 22px;
-
-}
-
-
-.call-text {
-
-  white-space: nowrap;
-
-  font-size: 15px;
-
-}
-
-
-.call-separator {
-
-  display: block;
-
-  width: 1px;
-
-  height: 30px;
-
-  background:
-    #cbddec;
-
-  margin:
-    0 3px;
-
-}
-
-
-.call-main strong {
-
-  white-space: nowrap;
-
-  font-size: 19px;
-
-}
-
-
-
-/* =========================================
-   SERVICES
-========================================= */
-
-.services {
-
-  width: 100%;
-
-  display: grid;
-
-  grid-template-columns:
-    repeat(3, minmax(0, 1fr));
-
-  gap: 15px;
-
-  align-items: stretch;
-
-}
-
-
-
-/* =========================================
-   SERVICE CARD
-========================================= */
-
-.service-card {
-
-  height: 510px;
-
-  background: white;
-
-  border:
-    1px solid
-    var(--border);
-
-  border-radius: 17px;
-
-  overflow: hidden;
-
-  box-shadow:
-    var(--shadow);
-
-  display: flex;
-
-  flex-direction: column;
-
-}
-
-
-
-/* IMAGE AREA */
-
-.service-picture {
-
-  height: 205px;
-
-  position: relative;
-
-  display: flex;
-
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
 
-  align-items: center;
+  gap: 10px;
+}
 
-  padding:
-    16px
-    18px
-    5px;
+.phone-icon {
+  color: var(--blue);
+  font-size: 20px;
+}
+
+.call-text {
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.call-separator {
+  width: 1px;
+  height: 25px;
+  background: #c8d8e7;
+  margin: 0 4px;
+}
+
+.call-main strong {
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+
+/* SERVICES */
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.service-card {
+  height: 505px;
 
   background: white;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
 
+  box-shadow: var(--shadow);
+
+  display: flex;
+  flex-direction: column;
 }
 
+.service-picture {
+  height: 205px;
+  position: relative;
+
+  padding: 12px 16px 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .service-picture img {
-
   width: 100%;
-
   height: 100%;
-
   object-fit: contain;
-
 }
 
-
-
-/* CIRCLE ICON */
-
 .circle-icon {
-
   position: absolute;
-
   top: 14px;
-
   left: 14px;
 
-  z-index: 5;
-
-  width: 58px;
-
-  height: 58px;
+  width: 52px;
+  height: 52px;
 
   border-radius: 50%;
 
   display: flex;
-
+  align-items: center;
   justify-content: center;
 
-  align-items: center;
-
   color: white;
+  font-size: 21px;
 
-  font-size: 27px;
+  border: 4px solid white;
 
-  font-weight: bold;
-
-  border:
-    4px solid white;
-
+  z-index: 5;
 }
-
 
 .blue-circle {
   background: var(--blue);
 }
 
-
 .green-circle {
   background: var(--green);
 }
-
 
 .orange-circle {
   background: var(--orange);
 }
 
 
-
-/* =========================================
-   CARD CONTENT
-========================================= */
+/* CARD CONTENT */
 
 .card-content {
-
   flex: 1;
-
-  padding:
-    6px
-    17px
-    15px;
+  padding: 8px 17px 15px;
 
   text-align: center;
 
   display: flex;
-
   flex-direction: column;
-
-  align-items: stretch;
-
 }
-
 
 .card-content h3 {
-
-  font-size: 20px;
-
+  font-size: 19px;
   line-height: 1.12;
-
-  font-weight: 900;
-
   margin-bottom: 14px;
-
 }
-
 
 .water-title {
   color: var(--blue);
 }
 
-
 .pipa-title {
   color: var(--green);
 }
-
 
 .trash-title {
   color: var(--orange);
 }
 
-
 .card-description {
+  min-height: 50px;
 
-  min-height: 48px;
-
-  font-size: 15px;
-
+  font-size: 14px;
   line-height: 1.35;
-
   font-weight: 600;
 
   margin-bottom: 12px;
-
 }
-
-
-
-/* =========================================
-   FEATURES
-========================================= */
 
 .features {
-
-  min-height: 66px;
+  min-height: 70px;
 
   display: flex;
-
   flex-wrap: wrap;
-
+  align-content: center;
   justify-content: center;
 
-  align-content: center;
+  gap: 9px 14px;
 
-  gap:
-    9px
-    16px;
-
-  color: #092b59;
-
-  font-size: 11px;
-
+  font-size: 10px;
   font-weight: 800;
 
-  margin-bottom: 9px;
-
+  margin-bottom: 8px;
 }
-
-
-.features span {
-
-  white-space: nowrap;
-
-}
-
-
-
-/* =========================================
-   PIPA 24/7
-========================================= */
 
 .available {
-
-  padding:
-    9px
-    6px;
-
+  padding: 8px 5px;
   margin-bottom: 10px;
 
-  border-radius: 10px;
+  border-radius: 8px;
 
-  background:
-    #e4fbed;
+  background: #e4fbed;
+  color: #087a36;
 
-  color:
-    #087a36;
-
-  font-size: 11px;
-
+  font-size: 10px;
   font-weight: 900;
-
 }
 
-
-
-/* =========================================
-   SERVICE BUTTONS
-========================================= */
-
 .service-button {
-
   width: 100%;
-
-  min-height: 53px;
+  min-height: 46px;
 
   margin-top: auto;
 
-  border-radius: 30px;
+  border-radius: 27px;
 
   display: flex;
-
-  justify-content: center;
-
   align-items: center;
+  justify-content: center;
 
   color: white;
 
-  font-size: 13px;
-
+  font-size: 12px;
   font-weight: 900;
-
 }
-
 
 .water-button {
-
-  background:
-    linear-gradient(
-      90deg,
-      #0863c7,
-      #0872dc
-    );
-
+  background: var(--blue);
 }
-
 
 .pipa-button {
-
-  background:
-    linear-gradient(
-      90deg,
-      #07913c,
-      #05a34a
-    );
-
+  background: var(--green);
 }
-
 
 .trash-button {
-
-  background:
-    linear-gradient(
-      90deg,
-      #f05b00,
-      #ff6500
-    );
-
+  background: var(--orange);
 }
 
 
-
-/* =========================================
-   BENEFITS
-========================================= */
+/* BENEFITS */
 
 .benefits {
-
-  height: 95px;
-
-  padding:
-    0 9%;
+  height: 92px;
+  padding: 0 9%;
 
   background: white;
 
   display: grid;
-
-  grid-template-columns:
-    repeat(4, 1fr);
-
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
-
 }
 
-
 .benefit {
-
   min-height: 42px;
 
   display: flex;
-
-  justify-content: center;
-
   align-items: center;
+  justify-content: center;
 
   gap: 18px;
 
   color: var(--dark-blue);
 
-  font-size: 15px;
+  font-size: 14px;
 
-  border-right:
-    1px solid #cfdeea;
-
+  border-right: 1px solid #cfdeea;
 }
-
 
 .benefit:last-child {
-
   border-right: none;
-
 }
-
 
 .benefit-symbol {
-
-  color: var(--dark-blue);
-
-  font-size: 32px;
-
+  font-size: 30px;
 }
 
 
-
-/* =========================================
-   BOTTOM BLUE BAR
-========================================= */
+/* BOTTOM BAR */
 
 .bottom-info {
+  height: 74px;
+  padding: 0 16%;
 
-  height: 78px;
-
-  padding:
-    0 16%;
-
-  background:
-    linear-gradient(
-      90deg,
-      #0864cb,
-      #0872dc
-    );
+  background: var(--blue);
 
   display: grid;
-
-  grid-template-columns:
-    repeat(3, 1fr);
-
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
 
   color: white;
-
 }
-
 
 .bottom-info div,
 .bottom-info a {
-
   color: white;
 
-  min-height: 38px;
-
   display: flex;
-
+  align-items: center;
   justify-content: center;
 
-  align-items: center;
+  gap: 15px;
 
-  gap: 16px;
+  font-size: 14px;
 
-  font-size: 16px;
-
-  border-right:
-    1px solid
-    rgba(255,255,255,.25);
-
+  border-right: 1px solid rgba(255,255,255,.25);
 }
-
 
 .bottom-info a {
-
   border-right: none;
-
 }
-
 
 .bottom-info span {
-
-  font-size: 27px;
-
+  font-size: 24px;
 }
 
 
-
-/* =========================================
-   FLOATING WHATSAPP
-========================================= */
+/* FLOATING WHATSAPP */
 
 .floating-whatsapp {
-
   position: fixed;
-
   right: 20px;
-
   bottom: 18px;
 
-  z-index: 1000;
-
-  width: 68px;
-
-  height: 68px;
+  width: 64px;
+  height: 64px;
 
   border-radius: 50%;
 
-  border:
-    4px solid white;
-
-  background:
-    #09a64b;
-
+  background: #09a64b;
   color: white;
 
-  display: flex;
+  border: 4px solid white;
 
+  display: flex;
+  align-items: center;
   justify-content: center;
 
-  align-items: center;
+  font-size: 30px;
 
-  font-size: 32px;
+  z-index: 1000;
 
-  box-shadow:
-    0 7px 25px
-    rgba(0,0,0,.20);
-
+  box-shadow: 0 7px 25px rgba(0,0,0,.2);
 }
 
 
+/* TABLET */
 
-/* =========================================
-   HOVER
-========================================= */
+@media (max-width: 1150px) {
 
-.nav-whatsapp,
-.main-button,
-.service-button,
-.floating-whatsapp {
-
-  transition:
-    transform .18s ease,
-    opacity .18s ease;
-
-}
-
-
-.nav-whatsapp:hover,
-.main-button:hover,
-.service-button:hover,
-.floating-whatsapp:hover {
-
-  transform:
-    translateY(-2px);
-
-  opacity: .92;
-
-}
-
-
-
-/* =========================================
-   1400PX LAPTOP
-========================================= */
-
-@media (max-width: 1450px) {
-
-  .topbar {
-    height: 105px;
-  }
-
-
-  .nav-container {
-  grid-template-columns:
-    300px
-    1fr
-    260px;
-}
-
-    padding:
-      0 28px;
-
+  .nav-links {
     gap: 18px;
-
   }
-
-
-  .header-logo {
-  width: 230px;
-  height: 95px;
-  object-fit: contain;
-  object-position: left center;
-}
-
-
-  .nav-links {
-
-    gap: 22px;
-
-  }
-
 
   .nav-links a {
-
     font-size: 11px;
-
   }
-
-
-  .nav-whatsapp {
-
-    min-height: 48px;
-
-    font-size: 11px;
-
-    padding:
-      0 15px;
-
-  }
-
 
   .hero {
-
-    padding:
-      45px
-      32px;
-
-    grid-template-columns:
-      39%
-      61%;
-
-    gap: 25px;
-
+    grid-template-columns: 35% 65%;
+    padding: 38px 22px;
   }
-
 
   .hero-copy h1 {
-
-    font-size: 68px;
-
+    font-size: 60px;
   }
-
 
   .hero-copy h2 {
-
-    font-size: 27px;
-
+    font-size: 24px;
   }
-
 
   .hero-description {
-
-    font-size: 18px;
-
-    margin-bottom: 30px;
-
-  }
-
-
-  .main-button {
-
-    height: 62px;
-
-  }
-
-
-  .whatsapp-main {
-
-    width: 235px;
-
-    font-size: 12px;
-
-  }
-
-
-  .call-main {
-
-    min-width: 300px;
-
-    gap: 10px;
-
-  }
-
-
-  .call-text {
-
-    font-size: 12px;
-
-  }
-
-
-  .call-main strong {
-
-    font-size: 15px;
-
-  }
-
-
-  .service-card {
-
-    height: 480px;
-
-  }
-
-
-  .service-picture {
-
-    height: 185px;
-
-  }
-
-
-  .card-content h3 {
-
     font-size: 17px;
-
   }
-
-
-  .card-description {
-
-    font-size: 13px;
-
-  }
-
-
-  .features {
-
-    font-size: 9px;
-
-  }
-
-
-  .service-button {
-
-    min-height: 45px;
-
-    font-size: 11px;
-
-  }
-
-}
-
-
-
-/* =========================================
-   SMALL LAPTOP
-========================================= */
-
-@media (max-width: 1180px) {
-
-  .nav-links {
-
-    gap: 12px;
-
-  }
-
-
-  .nav-links a {
-
-    font-size: 9px;
-
-  }
-
-
-  .hero {
-
-    grid-template-columns:
-      35%
-      65%;
-
-    padding:
-      35px
-      20px;
-
-  }
-
-
-  .hero-copy h1 {
-
-    font-size: 54px;
-
-  }
-
-
-  .hero-copy h2 {
-
-    font-size: 22px;
-
-  }
-
-
-  .hero-description {
-
-    font-size: 16px;
-
-  }
-
 
   .hero-buttons {
-
     flex-direction: column;
-
   }
-
 
   .whatsapp-main,
   .call-main {
-
     width: 100%;
-
-    min-width: 0;
-
-  }
-
-
-  .service-card {
-
-    height: 450px;
-
-  }
-
-
-  .service-picture {
-
-    height: 165px;
-
   }
 
 }
 
 
+/* MOBILE */
 
-/* =========================================
-   TABLET
-========================================= */
+@media (max-width: 850px) {
 
-@media (max-width: 950px) {
+  .topbar {
+    height: 85px;
+  }
 
   .nav-container {
-
-    grid-template-columns:
-      160px
-      1fr;
-
+    grid-template-columns: 160px 1fr;
+    padding: 0 15px;
   }
 
+  .header-logo {
+    width: 150px;
+    height: 70px;
+  }
 
   .nav-links {
-
     display: none;
-
   }
-
 
   .nav-whatsapp {
-
-    justify-self: end;
-
+    font-size: 10px;
+    min-height: 42px;
+    padding: 0 14px;
   }
-
 
   .hero {
-
-    grid-template-columns:
-      1fr;
-
+    grid-template-columns: 1fr;
   }
-
 
   .hero-copy {
-
-    max-width: 700px;
-
     margin: auto;
-
     text-align: center;
-
   }
-
 
   .hero-copy h2,
   .hero-description {
-
     margin-left: auto;
-
     margin-right: auto;
-
   }
-
 
   .blue-line {
-
     margin-left: auto;
-
     margin-right: auto;
-
   }
-
 
   .services {
-
-    max-width: 900px;
-
-    margin: auto;
-
+    grid-template-columns: 1fr;
   }
-
-}
-
-
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 700px) {
-
-  .topbar {
-
-    height: 82px;
-
-  }
-
-
-  .nav-container {
-
-    padding:
-      0 14px;
-
-    grid-template-columns:
-      120px
-      1fr;
-
-  }
-
-
-  .header-logo {
-
-    width: 115px;
-
-    height: 65px;
-
-  }
-
-
-  .nav-whatsapp {
-
-    font-size: 9px;
-
-    min-height: 42px;
-
-  }
-
-
-  .hero {
-
-    padding:
-      38px
-      15px;
-
-  }
-
-
-  .eyebrow {
-
-    font-size: 13px;
-
-  }
-
-
-  .hero-copy h1 {
-
-    font-size: 48px;
-
-  }
-
-
-  .hero-copy h2 {
-
-    font-size: 21px;
-
-  }
-
-
-  .hero-description {
-
-    font-size: 16px;
-
-  }
-
-
-  .services {
-
-    grid-template-columns:
-      1fr;
-
-  }
-
 
   .service-card {
-
     height: auto;
-
-    min-height: 460px;
-
+    min-height: 470px;
   }
-
-
-  .service-picture {
-
-    height: 220px;
-
-  }
-
 
   .benefits {
-
     height: auto;
-
-    padding:
-      22px
-      10px;
-
-    grid-template-columns:
-      1fr
-      1fr;
-
-    gap: 20px;
-
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
   }
-
 
   .benefit {
-
     border-right: none;
-
-    font-size: 11px;
-
+    font-size: 12px;
   }
-
 
   .bottom-info {
-
     height: auto;
-
-    padding:
-      18px;
-
-    grid-template-columns:
-      1fr;
-
-    gap: 15px;
-
+    padding: 18px;
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
-
 
   .bottom-info div,
   .bottom-info a {
-
     border-right: none;
-
   }
 
-}
-#agua .service-picture {
-  height: 205px;
-  overflow: hidden;
-}
-
-#agua .service-picture img {
-  display: block;
-  width: 95%;
-  height: 95%;
-  object-fit: contain;
-  object-position: center;
-}
-/* =========================================
-   AJUSTES FINALES DEL HEADER
-   ========================================= */
-
-.header-logo {
-  width: 280px !important;
-  height: 100px !important;
-  max-width: none !important;
-  object-fit: contain !important;
-  object-position: left center !important;
-}
-
-.brand {
-  width: 290px !important;
-  height: 105px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-}
-
-.nav-container {
-  grid-template-columns: 300px 1fr 230px !important;
-}
-.call-main {
-  min-width: 0 !important;
-  width: auto !important;
-  padding: 0 20px !important;
-
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-
-  gap: 10px !important;
-}
-
-.call-text {
-  margin: 0 !important;
-  padding: 0 !important;
-  white-space: nowrap !important;
-}
-
-.call-separator {
-  display: block !important;
-  width: 1px !important;
-  height: 25px !important;
-
-  margin: 0 5px !important;
-
-  background: #c7d8ee !important;
-}
-
-.call-main strong {
-  margin: 0 !important;
-  padding: 0 !important;
-  white-space: nowrap !important;
-}
-/* ==================================================
-   AJUSTES FINALES - PANTALLA DE COMPUTADORA
-   ================================================== */
-
-@media (min-width: 1100px) {
-
-  /* LOGO */
-  .brand {
-    width: 300px !important;
-    height: 105px !important;
-    overflow: visible !important;
-  }
-
-  .header-logo {
-    width: 210px !important;
-    height: 90px !important;
-    max-width: none !important;
-
-    object-fit: contain !important;
-    object-position: left center !important;
-
-    transform: scale(1.65) !important;
-    transform-origin: left center !important;
-  }
-
-
-  /* HEADER */
-  .nav-container {
-    grid-template-columns: 300px 1fr 235px !important;
-    padding-left: 35px !important;
-    padding-right: 35px !important;
-  }
-
-  .nav-links {
-    gap: 28px !important;
-  }
-
-  .nav-links a {
-    font-size: 13px !important;
-  }
-
-  .nav-whatsapp {
-    font-size: 13px !important;
-  }
-
-
-  /* TEXTO PRINCIPAL */
-  .eyebrow {
-    font-size: 17px !important;
-  }
-
-  .hero-copy h1 {
-    font-size: 78px !important;
-  }
-
-  .hero-copy h2 {
-    font-size: 29px !important;
-    line-height: 1.12 !important;
-  }
-
-  .hero-description {
-    font-size: 19px !important;
-    line-height: 1.5 !important;
-  }
-
-
-  /* BOTONES PRINCIPALES */
-  .whatsapp-main {
-    font-size: 13px !important;
-  }
-
-  .call-main {
-    font-size: 13px !important;
-  }
-
-  .call-text {
-    font-size: 13px !important;
-  }
-
-  .call-main strong {
-    font-size: 15px !important;
-  }
-
-
-  /* TARJETAS */
-  .card-content h3 {
-    font-size: 18px !important;
-  }
-
-  .card-description {
-    font-size: 14px !important;
-  }
-
-  .features {
-    font-size: 10px !important;
-  }
-
-  .available {
-    font-size: 10px !important;
-  }
-
-  .service-button {
-    font-size: 12px !important;
-  }
-
-
-  /* BENEFICIOS DE ABAJO */
-  .benefit {
-    font-size: 14px !important;
-  }
-
-  .bottom-info div,
-  .bottom-info a {
-    font-size: 14px !important;
-  }
-
-}
-/* LOGO FINAL */
-
-.brand {
-  width: 320px !important;
-  height: 110px !important;
-  overflow: visible !important;
-
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-}
-
-.nav-container {
-  grid-template-columns: 330px 1fr 230px !important;
 }
