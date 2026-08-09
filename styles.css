@@ -1010,3 +1010,154 @@ a {
   }
 
 }
+/* =====================================================
+   TAMAÑOS FINALES PARA COMPUTADORA
+   ===================================================== */
+
+@media (min-width: 1200px) {
+
+  /* ---------- MENU ---------- */
+
+  .nav-links a {
+    font-size: 16px !important;
+  }
+
+  .nav-links {
+    gap: 32px !important;
+  }
+
+  .nav-whatsapp {
+    font-size: 15px !important;
+    padding-left: 27px !important;
+    padding-right: 27px !important;
+  }
+
+
+  /* ---------- TEXTO PRINCIPAL ---------- */
+
+  .eyebrow {
+    font-size: 22px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .hero-copy h1 {
+    font-size: 92px !important;
+    line-height: 0.92 !important;
+    margin-bottom: 24px !important;
+  }
+
+  .hero-copy h2 {
+    font-size: 38px !important;
+    line-height: 1.12 !important;
+    max-width: 650px !important;
+  }
+
+  .hero-description {
+    font-size: 25px !important;
+    line-height: 1.45 !important;
+    max-width: 610px !important;
+  }
+
+
+  /* ---------- BOTONES PRINCIPALES ---------- */
+
+  .main-button {
+    min-height: 66px !important;
+    font-size: 15px !important;
+  }
+
+  .whatsapp-main {
+    min-width: 265px !important;
+  }
+
+  .call-main {
+    min-width: 325px !important;
+  }
+
+  .call-text {
+    font-size: 15px !important;
+  }
+
+  .phone-number {
+    font-size: 18px !important;
+  }
+
+  .phone-icon {
+    font-size: 22px !important;
+  }
+
+
+  /* ---------- TARJETAS ---------- */
+
+  .service-card {
+    height: 515px !important;
+  }
+
+  .card-content h3 {
+    font-size: 25px !important;
+    line-height: 1.08 !important;
+    margin-bottom: 15px !important;
+  }
+
+  .card-description {
+    font-size: 17px !important;
+    line-height: 1.35 !important;
+    font-weight: 700 !important;
+
+    min-height: 62px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .features {
+    font-size: 13px !important;
+    line-height: 1.35 !important;
+
+    gap: 9px 14px !important;
+
+    min-height: 70px !important;
+  }
+
+  .available {
+    font-size: 13px !important;
+    padding: 9px 7px !important;
+  }
+
+  .service-button {
+    min-height: 50px !important;
+    font-size: 15px !important;
+  }
+
+
+  /* ---------- IMAGENES DE SERVICIOS ---------- */
+
+  .card-image {
+    height: 200px !important;
+  }
+
+  .water-image {
+    height: 205px !important;
+  }
+
+
+  /* ---------- BENEFICIOS ---------- */
+
+  .benefit {
+    font-size: 17px !important;
+  }
+
+  .benefit-icon {
+    font-size: 32px !important;
+  }
+
+
+  /* ---------- BARRA AZUL INFERIOR ---------- */
+
+  .bottom-info div,
+  .bottom-info a {
+    font-size: 17px !important;
+  }
+
+  .bottom-info span {
+    font-size: 25px !important;
+  }
+}
