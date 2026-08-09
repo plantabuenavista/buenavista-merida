@@ -1546,35 +1546,54 @@ img {
    ========================================= */
 
 .header-logo {
-  width: 250px !important;
-  height: 95px !important;
+  width: 280px !important;
+  height: 100px !important;
   max-width: none !important;
   object-fit: contain !important;
   object-position: left center !important;
 }
 
 .brand {
-  width: 270px !important;
-  height: 100px !important;
+  width: 290px !important;
+  height: 105px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: flex-start !important;
 }
 
 .nav-container {
-  grid-template-columns: 280px 1fr 230px !important;
+  grid-template-columns: 300px 1fr 230px !important;
 }
-.call-button {
+.call-main {
+  min-width: 0 !important;
+  width: auto !important;
+  padding: 0 20px !important;
+
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 14px !important;
-  width: auto !important;
-  padding: 0 24px !important;
+
+  gap: 10px !important;
 }
 
-.call-button .phone-number {
-  margin-left: 0 !important;
-  padding-left: 14px !important;
-  border-left: 1px solid #c7d8ee !important;
+.call-text {
+  margin: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+}
+
+.call-separator {
+  display: block !important;
+  width: 1px !important;
+  height: 25px !important;
+
+  margin: 0 5px !important;
+
+  background: #c7d8ee !important;
+}
+
+.call-main strong {
+  margin: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
 }
