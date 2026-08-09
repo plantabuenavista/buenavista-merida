@@ -1597,3 +1597,120 @@ img {
   padding: 0 !important;
   white-space: nowrap !important;
 }
+/* ==================================================
+   AJUSTES FINALES - PANTALLA DE COMPUTADORA
+   ================================================== */
+
+@media (min-width: 1100px) {
+
+  /* LOGO */
+  .brand {
+    width: 300px !important;
+    height: 105px !important;
+    overflow: visible !important;
+  }
+
+  .header-logo {
+    width: 210px !important;
+    height: 90px !important;
+    max-width: none !important;
+
+    object-fit: contain !important;
+    object-position: left center !important;
+
+    transform: scale(1.65) !important;
+    transform-origin: left center !important;
+  }
+
+
+  /* HEADER */
+  .nav-container {
+    grid-template-columns: 300px 1fr 235px !important;
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+  }
+
+  .nav-links {
+    gap: 28px !important;
+  }
+
+  .nav-links a {
+    font-size: 13px !important;
+  }
+
+  .nav-whatsapp {
+    font-size: 13px !important;
+  }
+
+
+  /* TEXTO PRINCIPAL */
+  .eyebrow {
+    font-size: 17px !important;
+  }
+
+  .hero-copy h1 {
+    font-size: 78px !important;
+  }
+
+  .hero-copy h2 {
+    font-size: 29px !important;
+    line-height: 1.12 !important;
+  }
+
+  .hero-description {
+    font-size: 19px !important;
+    line-height: 1.5 !important;
+  }
+
+
+  /* BOTONES PRINCIPALES */
+  .whatsapp-main {
+    font-size: 13px !important;
+  }
+
+  .call-main {
+    font-size: 13px !important;
+  }
+
+  .call-text {
+    font-size: 13px !important;
+  }
+
+  .call-main strong {
+    font-size: 15px !important;
+  }
+
+
+  /* TARJETAS */
+  .card-content h3 {
+    font-size: 18px !important;
+  }
+
+  .card-description {
+    font-size: 14px !important;
+  }
+
+  .features {
+    font-size: 10px !important;
+  }
+
+  .available {
+    font-size: 10px !important;
+  }
+
+  .service-button {
+    font-size: 12px !important;
+  }
+
+
+  /* BENEFICIOS DE ABAJO */
+  .benefit {
+    font-size: 14px !important;
+  }
+
+  .bottom-info div,
+  .bottom-info a {
+    font-size: 14px !important;
+  }
+
+}
